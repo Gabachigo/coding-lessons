@@ -1,0 +1,9 @@
+* {
+  font-size: 50px;
+}
+
+p {
+  font-family: "Dosis Bold", sans-serif, "Times New Roman";
+  font-weight: bold;
+  font-style: italic;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <!--  
+    <table>
+
+    Prós 
+    - Visualizacao de dados via linhas e colunas
+    - Boa acessibilidade para leitura dos dados
+
+    Contras
+    - Pouco flexível
+    - Precisa de estilizacao para melhor visualizacao
+
+    Nao usar
+    - Para criar seu layout
+   
+    Tags:
+    <tr>-linha da tabela
+    <th>-cabecalho da coluna
+    <td>-conteudo 
+    <thead>-cabecalho da tabela
+    <tbody>-corpo da tabela
+    <tfoot>-rodapé da tabela
+    <table>-tag para abrir a tabela
+  -->
+
+  <table>
+
+    <caption>Pessoas por idade</caption>
+
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>nome 1</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>nome 2</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>nome 3</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>nome 4</td>
+        <td>23</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Total:</td>
+        <td>4 pessoas</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <br>
+
+  <!--  
+    2 Lojas
+      Quantos productos foram produzidos, quantos vendidos e agrupado por nome dos produtos
+
+
+      linha-row
+      coluna-column
+
+      Atributos:
+      rowspan-define o tanto de linhas na tabela
+      colspan-define o tanto de colunas na tabela
+      border-define a borda da tabela
+      scope-ajuda leitores de tela entender a tabela
+
+      Tags:
+      <colgroup>-tag para agrupar as colunas
+      <col>-significa uma coluna
+      <span>-Ligado com a coluna
+  -->
+
+  <table>
+
+    <caption>Produzidos VS Vendidos por Lojas</caption>
+
+
+    <colgroup>
+      <col>
+      <col span="2" style="background-color: #ff0000;">
+      <col span="2" style="background-color: #0000ff;">
+    </colgroup>
+    
+    <thead>
+      <tr>
+        <th rowspan="2"></th>
+        <th colspan="2" scope="colgroup">Maizena do Pará</th>
+        <th colspan="2" scope="colgroup">Bacalhau do Reino Unido</th>
+      </tr>
+      <tr>
+        <th scope="col">Produzidos</th>
+        <th scope="col">Vendidos</th>
+        <th scope="col">Produzidos</th>
+        <th scope="col">Vendidos</th> 
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">Peixe</th>
+        <td>50</td>
+        <td>30</td>
+        <td>60</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <th scope="row">Maizena</th>
+        <td>30</td>
+        <td>30</td>
+        <td>30</td>
+        <td>22</td>
+      </tr>
+    </tbody>
+
+  </table>
+
+</body>
+</html>

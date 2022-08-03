@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia do documento</title>
+  </head>
+  <body>
+    
+    <!--
+      Atributos globais mais utilizados
+    
+      - class
+      - contenteditable
+      - data-*
+      - hidden
+      - id
+      - style
+      - tableindex  bom para pessoas em mouse
+      - title
+    -->
+    
+    <div class="carrinho"  contenteditable="true">
+      <!--elementos aqui dentro-->
+      Conteudo
+    </div>
+    
+    <div class="carrinho" data-id="" id="name1">
+      <!--elementos aqui dentro-->
+      Conteudo
+    </div>
+    
+    <div class="carrinho"  id="name2" style="color: #ff0000;">
+      <!--elementos aqui dentro-->
+      Conteudo
+    </div>
+    
+    <div class="carrinho">
+      <!--elementos aqui dentro-->
+      Conteudo
+    </div>
+  
+    <div tabindex="1">
+      <!--elementos aqui dentro-->
+      Conteudo
+    </div>
+    
+    <div tabindex="2">
+      <!--elementos aqui dentro-->
+      Conteudo
+    </div>
+  
+    <div title="definir um titulo">
+      <!--elementos aqui dentro-->
+    Conteudo
+    </div>
+    
+    <!--
+      Aninhamento de tags
+
+      - Hiearaquia
+      - Fluxo
+      - Posicionamento dos elementos
+    -->
+    
+    <div>
+      <p>
+        Vou <em>escrever</em> um parágrafo
+      </p>
+    </div>
+    
+    <p>
+      <a href="#">Esse</a> 
+      é um 
+      <p>novo <br> parágrafo</p>
+    </p>
+
+    <!--
+      Pratica
+    
+      Escrever 2 paragrafos, dando enfase 
+      e importancia para algumas palavras,
+      e adicione um link de saiba mais.
+
+      - use a tag em para enfase
+      - use a tag strong para importancia
+      - o link pode levar para o google
+    -->
+
+    <p>
+      <strong>Doge</strong> is a meme of a <em>Shiba Inu</em> with a weird face and there is some thext around it in <em>Comic Sans</em> with words such as wow, such, so and how. It became famous around the world and became a hit on <a href="https://knowyourmeme.com">knowyourmeme.com</a>
+    </p>
+    
+    <p>
+      <strong>Doge</strong> was first seen in a Japanese website in <em>2010</em>, it was a photos of this a rescued dog(Doge) but then one of the pictures, the dog made a weird face, which became the meme, blah blah blah and now i'm writing thing thing that was totally not scripted, lol. <br>
+    </p>
+    
+    <a href="https://google.com">Learn More</a>
+
+    <p>
+      &nbsp; Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, reprehenderit ad maiores impedit molestiae neque necessitatibus officiis autem atque cum reiciendis est, sapiente voluptas pariatur id mollitia eveniet? Culpa, eveniet.
+    </p>
+    
+    <p>
+      &lt;oie&gt;
+      <br>
+      &amp;
+      &quot; oie &quot;
+      <br>
+      oie&apos;
+    </p>
+    
+    <!--
+      Semantica
+
+      - Dar significado
+      - Elementos semanticos
+    -->
+    
+    <!--
+      Cabecalhos e parágrafos
+    -->
+    
+    <h1>Sobre mim</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Omnis dolorum, sed maxime earum assumenda perspiciatis eaque incidunt distinctio vel facilis exercitationem maiores voluptatum autem ab debitis aut nulla, unde ipsa.</p>
+
+    <h2>Nascimento</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p> Possimus ex nobis tempore, aspernatur atque at nihil impedit natus aliquam distinctio rem quaerat. Cumque voluptatum illum quas nihil placeat veritatis error? </p>
+    
+    <h2>Trabalho</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p> Porro nobis, velit fuga ab voluptatibus reiciendis a nisi eveniet animi aperiam totam provident quidem. Natus asperiores debitis ab magni at libero!</p>
+
+    <a href="">Saiba mais</a>
+
+    <!--
+      Listas
+
+      - ordenadas
+      - nao ordenadas
+    -->
+    
+    <h1>Receita</h1>
+    <h2>Ingredientes</h2>
+
+    <ol>
+      <li>Ingrediente 1</li>
+      <li>Ingrediente 2</li>
+      <li>Ingrediente 3</li>
+      <li>Ingrediente 4</li>
+      <li>Ingrediente 5</li>
+      <li>Ingrediente 6</li>
+    </ol>
+
+    <h1>Receita 2</h1>
+    <h2>Ingredientes</h2>
+
+    <ul>
+      <li>Ingrediente 1</li>
+      <li>Ingrediente 2</li>
+      <li>Ingrediente 3</li>
+      <li>Ingrediente 4</li>
+      <li>Ingrediente 5</li>
+      <li>Ingrediente 6</li>
+    </ul>
+
+    <!--
+      Citacoes
+
+      <blockquote>
+
+      <cite>
+      
+      <q>
+      
+    -->
+
+    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+      The <strong> HTML<code>&lt;blockquote&gt;</code> Element</strong>(or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the<code>&lt;cite&gt;</code>element.
+    </blockquote>
+    
+    <p>De acordo com <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+      <cite>página MDN blockquote</cite></a>
+    </p>
+
+    <p>O elemento quote é <q>usado para citacoes como essa aqui!</q></p>
+    
+    <!-- 
+      Abreviacoes
+
+      <Abbr>
+      
+    -->
+
+    <p>Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar nossos documentos da web</p>
+
+
+    <!-- 
+      Detalhes de contato
+
+      <adress>
+
+    -->
+
+    <address>
+      <p>Pessoa <br>
+      <strong>Estado, País</strong>
+      </p>
+    </address>
+
+    <!-- 
+      Listas de descricao
+
+      <dl>
+        <dt></dt>
+        <dd></dd>
+      </dl>
+    -->
+
+    <h2>Glossário</h2>
+    <dl>
+      <dt>Hytpertext</dt>
+      <dd>asdfasdfasdfsasf</dd>
+
+      <dt>Markup</dt>
+      <dd>asdfasdfasdfsasf</dd>
+
+      <dt>Language</dt>
+      <dd>asdfasdfasdfsasf</dd>
+    </dl>
+
+    <!--
+      Representando codigos de computador
+
+      <code>
+        Partes geneticas de codígo
+
+      <pre>
+        Blocos de codgo, pois essa
+        tag mantém os espacos 
+        em brancos e recuos 
+        que eu colocar no 
+        meu codigo
+    -->
+
+    <pre>
+      <code>
+        document
+          .querySelector(&quot;body&quot;)
+      </code>
+    </pre>
+
+    <pre>
+      <code>
+        &lt;pre&gt;&lt;/pre&gt;
+      </code>
+    </pre>
+
+    <!-- 
+      Elementos genericos
+
+      * <div>
+      * <span>
+    -->
+
+    <div class="cart">
+      <span>Produto</span> <span>£0.99</span>
+    </div>
+
+    <span>Outro</span> <span>Texto</span>
+
+    <!-- 
+      Hyperlinks - elemento ancora: <a>
+
+      +Anatomia
+
+      +Atributos:
+        - globais (title, id, class)
+        - href
+          -para onde o iremos, quando clicarmos no link?
+            - url completa
+            - fragmento
+            - email
+            - telefone
+            - e outros
+        - download
+        - target
+          - _self (padrao)
+          - _blank
+    -->
+    
+    <br>
+
+    <a href="https://google.com">Counteudo</a>
+
+    <br>
+
+    <a href="" download="">Nao aperte esse butao</a>
+
+    <br>
+
+    <p>Entre em contato</p>
+
+    <ul>
+      <li><a href="https://google.com" target="blank">Site</a></li>
+      <li><a href="mailto:davi@tribodejuda.com">E-mail</a></li>
+      <li><a href="tel:07934537315">Telephone</a></li>
+    </ul>
+
+    <a href="https://google.com" target="_blank">Google</a>
+
+    <p>Saiba mais</p>
+    
+    <ul>
+      <li><a href="#about">Sobre mim</a></li>
+      <li><a href="#history">História</a></li>
+      <li><a href="#works">Trabalho</a></li>
+    </ul>
+
+    <h1 id="about">Sobre mim</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nostrum possimus architecto maxime blanditiis distinctio, numquam consequuntur recusandae consequatur porro repellendus excepturi modi quod dolore quia illum vero. Sequi, in?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatem, nostrum similique adipisci assumenda neque illo accusamus repellendus consectetur quidem temporibus rerum ullam dolor laborum veniam corporis enim magnam aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, earum assumenda rem officia similique voluptate temporibus! Non odit magni laudantium optio, fugit, consequatur voluptatibus, architecto ab porro beatae temporibus at! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium numquam corporis amet quia corrupti ex hic adipisci, ratione explicabo accusantium beatae vitae, quos iure id distinctio, reiciendis dolorem. Vero, explicabo!</p>
+
+    <h2 id="history">História</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi in facere dolorum esse. Nostrum mollitia accusamus quam at recusandae laboriosam, accusantium tempora impedit quo libero amet quae enim esse? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi sequi nostrum magnam. Laboriosam omnis hic itaque eum, maxime quo iste possimus? Corporis corrupti enim incidunt molestias praesentium, rerum commodi sit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, et harum! Porro sunt placeat totam aliquid reiciendis quae? Praesentium atque cumque libero natus ea alias corporis reprehenderit doloremque necessitatibus numquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium at dolor enim. Recusandae eaque, optio reiciendis ad tempore asperiores voluptates qui accusamus, molestiae aliquam delectus ipsum magni repellendus voluptatibus maiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio impedit alias porro! Natus necessitatibus iure modi rem voluptas quam, assumenda eos libero totam aliquid repellat quis, perferendis ab iste numquam?</p>
+
+    <h2 id="works">Trabalho</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius explicabo nisi sed quos eveniet cupiditate suscipit ipsum aut dolorum! Corrupti veritatis perferendis numquam? Porro quidem eaque voluptatibus iste corporis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam tenetur, blanditiis et iusto adipisci eius laboriosam quidem! Accusamus adipisci quidem saepe, consequatur ab, commodi nostrum inventore maiores, natus unde voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, quasi. Commodi labore a repellat ab optio natus mollitia vel inventore, aperiam, dolorem esse culpa! Facere doloremque doloribus perferendis qui dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore adipisci sint numquam dolor asperiores totam porro a vel laboriosam error. Blanditiis libero cumque consequatur. A quibusdam accusamus fuga neque. Quas?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam perspiciatis soluta itaque voluptatibus explicabo ut sit, recusandae nihil. Dolorum sequi atque minima tempore est reiciendis perferendis incidunt. Culpa, repellendus ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quisquam at omnis cupiditate eligendi, dolore pariatur, et iure nam nihil blanditiis, neque molestias dolor placeat quia non illum enim eaque.</p>
+
+    <!--  
+      Conteúdo dos hyperlinks
+
+      - qualquer conteúdo
+    -->
+
+    <a href="https://google.com" title="Ir para google">
+      <h1>Google</h1>
+      <p>Claro que posso</p>
+      <img src="https://source.unsplash.com/random">
+    </a>
+
+    <!--  
+      - Uniform resource locator
+        - https://www.rocketseat.com.br
+        - sequencia de texto que define onde algo eatá localizando na web
+      - URL usam caminhos para encontrar arquivos
+
+      - Caminhos dos arquivos
+        - Onde, no explorador de arquivos, um recurso está localizado
+    -->
+
+    <a href="index.html">Abrir hyperlinks</a>
+
+    <br>
+
+    <!--  
+      Como navegar pelos caminhos?
+
+      - mesmo diretório
+      - entrando em diretórios
+      - saindo de diretórios
+      -diretório rais (root ou pai)
+    -->
+
+    <a href="../index4.html">arquivo na pasta anterior</a>
+
+    <br>
+
+    <a href="./index.html">no diretorio raiz</a>
+
+    <br>
+
+    <a href="index.html">arquivo mesma pasta</a>
+
+    <br>
+
+    <a href="../folder-1/index2.html">outa pasta que esta na pasta anterior</a>
+
+    <br>
+
+    <!--  
+      URLs absolutos versus relativos
+
+      - Absolutos
+        - inclui protocolo e nome de domínio
+          - http://www.rocketseat.com.br/projeto/index.html
+        - sempre apontará para o mesmo local, pois é absoluto
+
+      - Relativos
+        - relativo á pagina aberta no momento
+        - apontará para lugares differentes
+      
+    -->
+
+    <a href="google.com">relativo: ir para o google</a>
+    <br>
+    <a href="https://google.com">absoluto: ir para o google</a>
+    
+
+  </body>
+</html>

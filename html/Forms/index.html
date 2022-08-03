@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+
+</head>
+<body>
+
+  <form action="">
+    <fieldset>
+      <legend>Datalist</legend>
+      <input type="text" list="list" placeholder="number">
+      <datalist id="list">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </datalist>
+    </fieldset>
+  </form>
+
+
+  <form action="">
+    <fieldset>
+      <legend>Password 1</legend>
+        <input id="password" type="password"
+          minlength="4"
+          maxlength="16"
+          size="20"
+          pattern="e[0-9a-fA-F]{4-16}"
+          title="4 characters min, use numbers lower and upper case characters"
+          placeholder="password"
+          required
+        >
+      
+        <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+
+  <form action="">
+    <fieldset>
+      <legend>Password 2</legend>
+      <input type="password"
+        inputmode="numeric"
+        autocomplete="new-password"
+      >
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+
+  <form action="">
+    <fieldset>
+      <legend>Email</legend>
+      <input type="email"
+        required
+        value="johndoe@gmail.com"
+        minlength="12"
+        pattern=".+@gmail\.com"
+      >
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+
+  <form action="">
+    <fieldset>
+      <legend>URL</legend>
+      <input type="url"
+        placeholder="http://example.com"
+        required
+        pattern="*\.co\.uk/."
+        title="hi"
+        spellcheck="false"
+      >
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+
+  <form action="" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>File(s)</legend>
+      <input 
+      type="file"
+      accept="video/*"
+      multiple
+    >
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+
+  <form action="">
+    <fieldset>
+      <legend>Color</legend>
+        <datalist id="colorsdata">
+          <option>#0000ff</option>
+        </datalist>
+        <input type="color" value="#0000ff" list="colorsdata">
+    </fieldset>
+  </form>
+
+<form action="">
+  <fieldset>
+    <legend>Interests</legend>
+    <div>
+      <label for="subscribe">Food</label>
+      <input type="checkbox" name="food" id="food" value="food" checked>
+    </div>
+    <div>
+      <label for="subscribe">Gaming</label>
+      <input type="checkbox" name="gaming" id="gaming" value="gaming" checked>
+    </div>
+  </fieldset>
+</form>
+
+<input type="hidden" id="timestamp" name="timestamp"
+value="8">
+
+<form action="">
+  <fieldset>
+    <legend>Radio</legend>
+    <label for="yep">Yep</label>
+    <input type="radio" id="yep" value="yes" name="coffee">
+
+    <label for="nope">Nope</label>
+    <input type="radio" id="nope" value="no" name="coffee" checked>
+  </fieldset>
+</form>
+
+<form action="">
+  <fieldset>
+    <legend>Text Area</legend>
+    <label for="message">Send >:D</label>
+    <textarea id="message" name="message" rows="5" cols="10" minlength="4" maxlength="69" wrap="off"></textarea>
+    <button type="off" autofocus>send</button>
+  </fieldset>
+</form>
+
+<form action="">
+  <fieldset>
+    <legend>Select</legend>
+    <label for="food">Food :)</label>
+    <br>
+    <select name="food" id="food" size="4" multiple>
+      <option value="egg">egg</option>
+      <option value="sausage">sausage</option>
+      <option value="bread">bread</option>
+      <option value="pasta">pasta</option>
+    </select>
+  </fieldset>
+</form>
+
+<form action="">
+  <fieldset>
+    <legend>Option group</legend>
+    <label for="">Please choose one or more foods:</label>
+    <br>
+    <select name="" id="" multiple size="10">
+      <optgroup label="breakfast">
+        <option value="egg">egg</option>
+        <option value="sausage">sausage</option>
+        <option value="bread">bread</option>
+        <option value="pasta" disabled>hashbrowns</option>
+      </optgroup>
+      <optgroup label="lunch/dinner">
+        <option value="pizza">pizza</option>
+        <option value="pasta">pasta</option>
+        <option value="rice">rice</option>
+        <option value="beans">beans</option>
+      </optgroup>
+    </select>
+  </fieldset>
+</form>
+
+<form action="">
+  <fieldset>
+    <legend>Search</legend>
+    <datalist id="srcterms">
+      <option>Mac</option>
+      <option>Windows</option>
+      <option>Linux</option>
+      <option>Raspberry</option>
+    </datalist>
+    <input type="search" name="sr" id="src" list="srcterms">
+  </fieldset>
+</form>
+
+</body>
+</html>
