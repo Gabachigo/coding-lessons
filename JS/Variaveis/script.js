@@ -1,117 +1,117 @@
-/* 
-String
-- Cadeia de caracteres
-
-"" // Aspas duplas
-'' // Aspas simples
-`` // Template literals ou template strings
+/*
+Variaveis
+- Nomes simbolicos para receber algum valor
+- Atalhos de codigo
+- 3 palavras reservadas para criar uma variavel
+  - var
+  - let
+  - const
 */
 
-console.log("Dav''''''''``")
-console.log('Dav"""""""```')
-console.log(`
-"""""''
-${1+1}
-dav
-`)
-// ${1+1} = interpolacao
+var clima = "Quente"
+clima = "Frio"
+console.log(clima)
+
+let climate = "Snow"
+clima = "Fog"
+console.log(climate)
+
+const clime = "Rain"
+console.log(clime)
+//Nao é possivel trocar o valor de uma const
+
+/*
+Tipos dinamicos
+- Nao precisa de ter um tipo previamente definido
+*/
+
+let clima2 = true
+clima2 = ""
+//dinamico
+
+console.log(typeof clima2)
+// checar o tipo da variavel
 
 
 /*
-Numbers
-- Numeros
+Scopo & var
+- O scopo determina a visibilidade de alguma variavel no JS
 
-33 // Inteiros
-12.5 // Reais - Float
-NaN // Not A Number
-Infinity // Infinito
+Block statement
+- Declaracao de bloco
+
+comecamos o bloco
+{
+  conteudo
+}
+fechamos o bloco
+
+o var é global e poderá funcionar fora de um scopo, const & let sao locais e só funcional no escopo onde foi criada
+
+Hoisting
+- elevacao
+- item no scopo é elevado para cima sem um valor(nesse exemplo o var)
+
 */
 
-console.log(12.5/2) // Normal result
-console.log(12/"hfuehfh") // NaN result
-console.log(Infinity) // Infinity result, "infinity" with lower case results in not defined error
+//exemplo
+{
+  let v = 0
+  console.log(v)
+}
+
+
+console.log('> existe x antes do bloco?', x)
+// resultado de indefinido, x existe mas nao foi definido
+
+{
+  var x = 0
+}
+
+console.log('> existe x depois do bloco?', x)
+// resultado de 0
+
+
+let y = 1
+
+{
+  y = 0
+  console.log('> existe y', y)
+  // isso so atualisa o valor de y dado que o y nesse scopo veio do y no scopo anterior
+}
+
+console.log('> existe y depois do bloco?', y)
+
+
+const z = 1
+
+{
+  const z = 0
+  console.log('> existe z', z)
+}
+
+console.log('> existe z depois do bloco?', z)
 
 
 /*
-Boolean
+Nomes de variaveis
+- JS é case sensitive
+- JS aceita caracteres unicode
 
-true
-false
+Posso:
+  - iniciar com essas caracteres especiais $_
+  - Iniciar com letras
+  - Colocar acentos
+  - Letras maíusculas e minúsculas fazem diferenca
+
+Nao posso:
+  - Iniciar con números
+  - Colocar espacos vazios no nome
+
+Ideal
+  - Criar nomes que fazem sentido
+  - Que explique o que a variável é ou faz
+  - camelCase
+  - sname_case
+  - Escrever em ingles
 */
-
-console.log(true)
-console.log(false)
-
-/*
-Null
-- Nao possui nada dentro
-- Differente de indefinido
-*/
-
-console.log(null)
-console.log(null == undefined)
-
-/*
-Object
-- Objeto
-- Propiedates/Atributos
--Funcionalidades/Metodos
-
-{propiedade:"valor"}
-*/
-
-console.log({
-  name: "Davi",
-  age: 14,
-  walk: function(){
-    console.log("walk")
-  }
-})
-
-/*
-Array
-- Uma lista
--Agrupamento de dados
-*/
-
-console.log([
-  "Leite",
-  "Ovos",
-  "Banana",
-  2,
-  3,
-  4
-])
-
-/*
-Conclusao
-
-Data types
-- Primitive / Primitive value
-- Structural
-- Structural Primitive
-
-Primitivos (Valor)
-- String
-- Number
-- Boolean
-- undefined
-- Symbol
-- BigInt
-
-Estruturais
-- Object
-  - Array
-  - Map
-  - Set
-  - Date
-  - ...
-- Function
-
-Primitivo estrutural/Structural Root Primitive
-- Null
-*/
-
-
-// Template console.log
-console.log()
