@@ -175,16 +175,68 @@ value="8">
   </fieldset>
 </form>
 
+<datalist id="srcterms">
+  <option>Mac</option>
+  <option>Windows</option>
+  <option>Linux</option>
+  <option>Raspberry</option>
+</datalist>
+
 <form action="">
   <fieldset>
     <legend>Search</legend>
-    <datalist id="srcterms">
-      <option>Mac</option>
-      <option>Windows</option>
-      <option>Linux</option>
-      <option>Raspberry</option>
-    </datalist>
-    <input type="search" name="sr" id="src" list="srcterms">
+    <input type="search" name="src" id="src" list="srcterms" placeholder="Search your needs >:)" aria-label="search your needs">
+    <button>Search</button>
+  </fieldset>
+</form>
+
+<form action="">
+  <fieldset>
+    <legend>Number</legend>
+    <input type="number" value="10" min="10" max="100" step="10">
+  </fieldset>
+</form>
+
+<form action="">
+  <fieldset>
+    <legend>Range</legend>
+    <input type="range" min="1" max="100" value="50" style="outline: none;">
+  </fieldset>
+</form>
+
+<form action="">
+  <fieldset>
+    <legend>Date & hour(not fully optimised for all browsers)</legend>
+    <input type="date" value="2017-12-30">
+    <input type="datetime">
+    <input type="datetime-local">
+    <input type="week">
+    <input type="time">
+  </fieldset>
+</form>
+
+<form action="">
+  <fieldset>
+    <legend>Contact</legend>
+    <label for="name">Name:</label>
+    <br>
+    <input type="name" id="name" size="20" placeholder="Name">
+    <br>
+    <label for="email">Email:</label>
+    <br>
+    <input type="email" id="email" size="20" pattern=".+@gmail\.com" placeholder="example@google.com">
+    <br>
+    <label for="message">Message:</label>
+    <br>
+    <textarea id="message" rows="9" cols="19" minlength="4" placeholder="Type your message here"></textarea>
+    <br>
+    <button type="submit">Send</button>
+  </fieldset>
+</form>
+
+<form action="">
+  <fieldset>
+    <legend>Blank</legend>
   </fieldset>
 </form>
 
