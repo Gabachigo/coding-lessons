@@ -13,8 +13,8 @@ function sayMyName(name) {
 
 try {
   sayMyName('Davi')
-} catch(e) {
-  console.log(e)
+} catch(error) {
+  console.log(error)
 }
 
 console.log('apos o try catch')
