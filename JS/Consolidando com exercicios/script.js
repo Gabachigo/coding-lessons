@@ -52,8 +52,12 @@ const bookByCategory = [
   }
 ];
 
-let totalCategories = function total() {
-  for (let category of bookByCategory) {
-    total += 1
+const totalCategories = bookByCategory.length
+
+for ( i = 0; i < 3; i++ ) {
+  let booksInCategory = bookByCategory[i].book.length
+  
+  for ( i = 0; i < 3; i++ ) {
+    console.log(bookByCategory[i].book[i].author)
   }
-};
+}
