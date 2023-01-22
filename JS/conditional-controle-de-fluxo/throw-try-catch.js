@@ -1,6 +1,6 @@
 // throw
 
-function sayMyName(name) {
+function sayMyName(name = '') {
   if (name === '') {
     throw 'Broski you need a  name'
   }
