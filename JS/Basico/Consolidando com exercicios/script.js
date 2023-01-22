@@ -74,6 +74,7 @@ for ( let i = 0; i < totalCategories; i++ ) {
   // total books being calculated here
   let booksInCategory = bookByCategory[i].book.length
   totalBooks += booksInCategory
+
   // adding authors to an array
   for ( let i = 0; i < booksInCategory; i++ ) {
     let authorCheck = authors.indexOf(bookByCategory[categoryIndex].book[i].author)
@@ -88,7 +89,7 @@ for ( let i = 0; i < totalCategories; i++ ) {
   categoryIndex += 1
 }
 
-function booksByMeat(library) {
+function booksByMeat(library, author) {
   // making an array of books
   let booksByMeat = []
   let libIndex = 0
@@ -98,7 +99,7 @@ function booksByMeat(library) {
     
     // checking if author is Meat
     for (let i = 0; i < booksInCategory; i++) {
-      if ( library[libIndex].book[i].author == "Meat" ) {
+      if ( library[libIndex].book[i].author == author ) {
         booksByMeat.push(library[libIndex].book[i].title)
       }
       
@@ -113,4 +114,29 @@ function booksByMeat(library) {
 console.log(`There are ${totalCategories} categories in total`)
 console.log(`There are ${totalBooks} books in total`)
 console.log(`There are ${authors.length} authors in total`)
-booksByMeat(bookByCategory)
+booksByMeat(bookByCategory, "Meat")
+
+
+// dad example
+// function booksByMeat(library, author) {
+//   const books = [];
+//   library.map(category => {
+//     category.book.map(book => {
+//       if (book.author === author) books.push(book.title)
+//     })
+//   })
+//   console.log(books);
+// }
+
+// other one
+// function booksByMeat(library, author) {
+//   const books = [];
+//   for (const category of library) {
+//     for (const book of category.book) {
+//       if (book.author === author) {
+//         books.push(book.title);
+//       }
+//     }
+//   }
+//   console.log(books);
+// }
