@@ -78,3 +78,81 @@ classList.classList.add('active', 'green', 'egg');
 classList.classList.toggle('active'); // toggles a class on or off(add or remove)
 classList.classList.remove('egg');
 console.log(classList.classList);
+
+
+// NAVIGATING ELEMENTS
+const child = document.querySelector('body');
+
+// BASIC
+
+// childNodes
+console.log(child.childNodes);
+
+// children
+console.log(child.children)
+
+// FATHER
+
+// parentElement
+console.log(child.parentElement);
+
+// parentNode
+console.log(child.parentNode);
+
+// CHILD
+
+// firstElementChild
+console.log(child.firstElementChild);
+
+// firstChild
+console.log(child.firstChild);
+
+// lastElementChild
+console.log(child.lastElementChild); // gets children of last element
+
+// lastChild
+console.log(child.lastChild);
+
+// SIBBLINGS
+
+const sibling = document.querySelector('.balls')
+
+// nextSibbling
+console.log(sibling.nextSibling);
+
+// nextElementSibbling
+console.log(sibling.nextElementSibling);
+
+// previousSibbling
+console.log(sibling.previousSibling);
+
+// previousElementSibbling
+console.log(sibling.previousElementSibling);
+
+
+// CREATING AND ADDING ELEMENTS
+
+// create element
+const body = document.querySelector('body');
+const create = document.createElement('h2');
+const createMore = document.createElement('h2');
+const creatingTooMuch = document.createElement('h2');
+
+create.innerText = "big words";
+createMore.innerText = "big words";
+creatingTooMuch.innerText = "big words";
+
+
+// append - put after everything on the element
+body.append(create);
+
+// prepend - put before anything on the element
+body.prepend(createMore);
+
+// insertBefore
+const input = document.querySelector('input')
+
+body.insertBefore(creatingTooMuch, input);
+
+
+// EVENTS
