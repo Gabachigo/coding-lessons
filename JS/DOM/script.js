@@ -156,3 +156,25 @@ body.insertBefore(creatingTooMuch, input);
 
 
 // EVENTS
+
+// VIA HTML
+// you need a function that will be executed by an attribute in a tag (e.g. <h1 onmousehover="print">)
+function print() {
+  console.log('print')
+}
+
+// KEYBOARD
+// reusing the value variable for the input
+value.onkeydown = function() {
+  console.log("down")
+}
+
+value.onkeyup = function() {
+  console.log("up")
+}
+
+value.onkeypress = function() {
+  console.log("pressed")
+}
+
+// VIA JS
