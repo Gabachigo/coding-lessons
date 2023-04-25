@@ -178,3 +178,8 @@ value.onkeypress = function() {
 }
 
 // VIA JS
+function print() {
+  console.log('you suck')
+}
+
+
